@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <title>Send BSV </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <br><br>
+    <div class="center">
+        <div class="row">
+            <div id="sendcard" class="column" style="background-color:rgb(255, 255, 255);">
+
+                <div class="jigs">
+                    <div id="jigscon">
+                        <h2>Send (bsv)</h2>
+                        <div class="jigsList" id="tokens">
+                            <div class="p1" ><span class="contractName">Balance:</span>
+                            <span id="tokenBalance" class="tokenBalance"></span></div>
+                        </div>
+                        <div class="label amtlabel"></div>
+                        <div>
+                            <input type="number" class="sendAmt" id="sendamt" step="0.000001"
+                                placeholder="Amount to Send">
+                        </div>
+                        <div class="label addrlabel"></div>
+                        <div>
+                            <input type="text" class="addrInput" id='sendaddr' placeholder="Paymail / Address">
+                        </div>
+                        <br>
+                        <div class="send">
+                            <a href="./index.html"><img src="./assets/back.svg" class="back" id="back"></a>
+                            <button class="jigsBtn" type="button" id="sendbsv">SEND</button>
+                        </div>
+                    </div>
+
+                    <div class="check" id="confirm" style="display:none">
+                        <div>Sent!</div>
+                
+                        <a href="" id="confirmation" target="_blank" rel="noreferrer">
+                            <img src="./assets/check.svg">
+                            
+                        </a>
+
+                        <a href="./index.html" class="button" id='homebtn'>Back</a>   
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="./scripts/bsv.browser.min.js"></script>
+<script src="./scripts/config.js"></script>
+<script src="./scripts/run.browser.min.js"></script>
+<script src="./scripts/idb.js"></script>
+<script src="./scripts/helpers.js"></script>
+<script src="./scripts/purse.js"></script>
+<script src="./scripts/sendbsv.js"></script>
+
+</html>

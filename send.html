@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <title>Send NFTs / Tokens </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="manifest" href="./manifest.json">
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="./styles/send.css"> -->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div>
+        <br><br>
+        <div class="center">
+            <div class="row">
+                <div class="column">
+                    <div class="jigs">
+                        <div id="jigscon">
+
+
+
+                            <div>Current Balance</div>
+                            <div id="tokens">
+                                <p>
+                                    <span id="img"></span>
+                                    <span id="contractName"></span>
+                                    <span id="tokenBalance"></span>
+                                </p>
+                            </div>
+                            <div id="tokenamt" class="tokenamt" style="display:none">
+                                <div>Amount to Send</div>
+                                <div>
+                                    <input type="number" id="sendamt">
+                                </div>
+                            </div>
+                            <div>Address / Paymail</div>
+                            <div>
+                                <input type="text" id='sendaddr'>
+                            </div>
+                            <br>
+                            <div>
+                                <a href="./index.html"><img src="./assets/back.svg" class="back" id="back"></a>
+                                <button id="sendjig">SEND</button>
+                            </div>
+
+                        </div>
+
+                        <div class="check" id="confirm" style="display:none">
+                            <div>Sent!</div>
+
+                            <a href="" id="confirmation" target="_blank" rel="noreferrer">
+                                <img src="./assets/check.svg">
+                            </a>
+
+                            <a href="./index.html" class="button" id='homebtn'>Back</a>   
+
+                        
+                        </div>
+                         
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="./scripts/bsv.browser.min.js"></script>
+<script src="./scripts/config.js"></script>
+<script src="./scripts/run.browser.min.js"></script>
+<script src="./scripts/qrcode.min.js"></script>
+<script src="./scripts/twemoji.min.js"></script>
+<script src="./scripts/idb.js"></script>
+<script src="./scripts/purse.js"></script>
+<script src="./scripts/helpers.js"></script>
+<script src="./scripts/history.js"></script>
+<script src="./scripts/send.js"></script>
+
+</html>
